@@ -1,0 +1,18 @@
+[ios]
+
+[ios:vars]
+ansible_network_os=ios
+ansible_user=ansible
+ansible_password=Zg&XlZ5D@k35
+ansible_become=yes
+ansible_become_method=enable
+ansible_become_password=cisco
+
+[ios:children]
+routers
+
+[routers]
+R1 ansible_host=10.76.1.21 
+R2 ansible_host=10.76.1.22
+R3 ansible_host=10.76.1.23
+CSR1 ansible_host=10.76.1.30
